@@ -1,10 +1,12 @@
 import React from 'react'
+import { Navbar } from './Navbar'
 import product1 from './Public/product-5.jpg'
 
 const ListEnsPage = () => {
   return (
     <>
-      <div className=" bg-gradient-to-r from-green-900 via-gray-900 to-red-900 flex flex-col justify-center items-center">
+    <Navbar/>
+      <div className="bg-rbgradient flex flex-col justify-center items-center">
         <h1 className='text-white text-lg md:text-xl lg:text-3xl font-righteous tracking-wider uppercase pt-24 lg:px-32 pb-5'>Your Owned ENS</h1>
 
         {/* CARDS */}

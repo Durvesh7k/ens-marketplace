@@ -5,7 +5,7 @@ import nft from "./Public/nft.png";
 export const Home = () => {
     return (
         <>
-        <div className='bg-glassmorphic'>
+        <div className='bg-rbgradient'>
         <Navbar />
 
 

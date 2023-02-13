@@ -12,6 +12,7 @@
   "dependencies": {
     "@arcana/auth": "^1.0.1",
     "@babel/preset-react": "^7.18.6",
+    "@headlessui/react": "^1.7.10",
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "@openzeppelin/contracts": "^4.7.2",
     "@popperjs/core": "^2.11.5",
