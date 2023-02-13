@@ -1,5 +1,5 @@
 import React from 'react'
-import product1 from '../Public/product-5.jpg'
+import product1 from './Public/product-5.jpg'
 
 const ListEnsPage = () => {
   return (
