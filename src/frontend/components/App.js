@@ -6,6 +6,7 @@ import { BuyensPage } from './BuyensPage';
 import ListEnsPage from './ListEnsPage';
 import { About } from './About';
 import { Footer } from './Footer';
+import LoginPage from './LoginPage';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/buyens' element={<BuyensPage/>} />
+        <Route path='/login' element={<LoginPage/>} />
         <Route path='/listens' element={<ListEnsPage/>} />
         <Route path='/about' element={<About />} />
       </Routes>

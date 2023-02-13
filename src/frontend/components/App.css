@@ -19,3 +19,10 @@ font-family: 'Inter', sans-serif;
 .brand-logo{
   /* font-family: 'Andika', sans-serif; */
 }
+
+.bg-login{
+  
+  background-color: rgb(15, 23, 42);
+  background-image: radial-gradient(at 0% 0%, rgb(15, 23, 42) 0, transparent 98%), radial-gradient(at 100% 100%, rgb(15, 23, 42) 0, transparent 100%), radial-gradient(at 8% 68%, rgb(30, 64, 175) 0, transparent 93%), radial-gradient(at 61% 44%, rgb(244, 63, 94) 0, transparent 100%);
+
+}

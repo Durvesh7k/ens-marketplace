@@ -59,9 +59,8 @@ export const Navbar = () => {
                                 >
 
                                     <Link
-                                        href="/listens"
+                                        to="/listens"
                                         activeClass="listens"
-                                        to="about"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
@@ -70,9 +69,9 @@ export const Navbar = () => {
                                         List ENS
                                     </Link>
                                     <Link
-                                        href="/buyens"
+                                        to="/buyens"
                                         activeClass="buyens"
-                                        to="skills"
+                                        
                                         smooth={true}
                                         offset={50}
                                         duration={500}
@@ -82,9 +81,8 @@ export const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        href="/about"
+                                        to="/about"
                                         activeClass="about"
-                                        to="works"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
