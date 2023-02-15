@@ -10,7 +10,7 @@ import { Footer } from './Footer';
 import LoginPage from './LoginPage';
 import useArcanaAuth from './useArcanaAuth';
 import { ethers } from 'ethers';
-import ensAbi from './ENSContract.json';
+import ensAbi from './EnsContract.json';
 import EnsNameAbi from '../contractsData/EnsName.json';
 import EnsNameAddress from '../contractsData/EnsName-address.json';
 import { ColorRing } from 'react-loader-spinner';
@@ -97,6 +97,7 @@ function App() {
     <div>
       {loading ? (
         <div className='loading'>
+hi
           <ColorRing
             visible={true}
             height='100'
