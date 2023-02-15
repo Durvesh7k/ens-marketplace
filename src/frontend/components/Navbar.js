@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom";
 import profile from './Public/profile.png';
 import { MdAccountCircle, MdKeyboardArrowRight } from 'react-icons/md';
-import { HiMenuAlt3, HiOutlineX } from 'react-icons/hi';
+import { HiMenuAlt3,HiOutlineX } from 'react-icons/hi';
 import { Transition } from '@headlessui/react';
 
 
@@ -35,7 +35,6 @@ export const Navbar = ({account,onClickButton}) => {
                        } 
                         {/* <MdKeyboardArrowRight className='text-sm text-white-500' /> */}
                     </li>
-
                 </ul>
                 <div class="md:hidden flex items-center" onClick={() => setIsOpen(!isOpen)}>
                     <button class="outline-none p-2   mobile-menu-button bg-slate-500/30 rounded-full border-1 border-gray-500 select-none focus:bg-slate-800">
@@ -86,32 +85,32 @@ export const Navbar = ({account,onClickButton}) => {
                                     Buy ENS
                                 </Link>
 
-                                <Link
-                                    to="/about"
-                                    activeClass="about"
-                                    smooth={true}
-                                    offset={50}
-                                    duration={500}
-                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                >
-                                    About
-                                </Link>
-                                <Link
-                                    href="/contact"
-                                    activeClass="contact"
-                                    to="contact"
-                                    smooth={true}
-                                    offset={50}
-                                    duration={500}
-                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                >
-                                    Connect Wallet
-                                </Link>
-
+                                    <Link
+                                        to="/about"
+                                        activeClass="about"
+                                        smooth={true}
+                                        offset={50}
+                                        duration={500}
+                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                        About
+                                    </Link>
+                                    <Link
+                                        href="/contact"
+                                        activeClass="contact"
+                                        to="contact"
+                                        smooth={true}
+                                        offset={50}
+                                        duration={500}
+                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                        Connect Wallet
+                                    </Link>
+                                  
+                                </div>
                             </div>
-                        </div>
-                    )
-                }
+                        )
+                    }
 
             </Transition>
         </nav >
