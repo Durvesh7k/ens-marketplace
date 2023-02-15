@@ -30,10 +30,8 @@ export const Navbar = ({account,onClickButton}) => {
                         <span>Connect wallet</span>
                        ):(
                         <span>Connected</span>
-                       )
-
-                       } 
-                        {/* <MdKeyboardArrowRight className='text-sm text-white-500' /> */}
+                       )} 
+                       <MdKeyboardArrowRight className='text-sm text-white-500' />
                     </li>
                 </ul>
                 <div class="md:hidden flex items-center" onClick={() => setIsOpen(!isOpen)}>
