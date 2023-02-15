@@ -55,13 +55,13 @@ const LoginPage = ({loginWithLink,login}) => {
               <span class="px-3 font-medium    left-1/2 text-white">or</span>
               <span class="h-0.5  my-8 bg-gray-400 w-full border-0 "></span>
             </div>
-            <button className="py-1.5 px-4  flex items-center justify-center  w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-cyan-600" onClick={() => {login('google')}}>
+            <button className="py-1.5 px-4  flex items-center justify-center  w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200" onClick={() => {login('google')}}>
               <FcGoogle class="text-2xl" />
               <span className="text-sm ml-2" >
                 SignIn with Google
               </span>
             </button>
-            <button className="py-1.5 px-4  flex items-center justify-center mt-3 w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-cyan-600">
+            <button className="py-1.5 px-4  flex items-center justify-center mt-3 w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200">
               <FaDiscord class="text-2xl text-blue-500" />
               <span className="text-sm ml-2">
                 SignIn with Discord

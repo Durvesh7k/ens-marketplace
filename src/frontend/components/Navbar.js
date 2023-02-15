@@ -11,7 +11,7 @@ export const Navbar = ({account,onClickButton}) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="bg-transparent fixed border-b-2 border-slate-700 w-screen text-gray-100 backdrop-filter backdrop-blur-lg">
-            <div className="container mx-auto flex items-center justify-between py-4 sm:px-8 px-12 ">
+            <div className="container mx-auto flex items-center justify-between sm:px-8 px-12 ">
                 <div className="brand-logo">
                     <Link to="/" className="text-xl font-semibold ">ENS Marketplace</Link>
                 </div>

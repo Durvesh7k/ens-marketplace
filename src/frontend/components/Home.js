@@ -6,7 +6,6 @@ import TimeLine from './TimeLine';
 export const Home = () => {
     return (
         <>
-            <Navbar />
             <div className='bg-rbgradient min-h-screen py-12'>
                 <div className="flex flex-col md:flex-row md:px-16 container text-gray-200 mx-auto items-center justify-center ">
                     <div className="w-full px-4 md:w-3/6 flex order-2 md:order-1 flex-col items-start justify-start">
