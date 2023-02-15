@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Link, NavLink } from "react-router-dom";
 import profile from './Public/profile.png';
 import { MdAccountCircle, MdKeyboardArrowRight } from 'react-icons/md';
-import { HiMenuAlt3,HiOutlineX } from 'react-icons/hi';
+import { HiMenuAlt3,HiOutlineX,HiLogout } from 'react-icons/hi';
 import { Transition } from '@headlessui/react';
 
 
@@ -29,6 +29,9 @@ export const Navbar = () => {
                     <li className="flex items-center justify-center ml-2 px-4 py-1 cursor-pointer text-sm text-blue-100 transition-colors duration-300 bg-blue-500 rounded-full shadow-xl hover:bg-blue-600 shadow-blue-400/30">
                         <Link className='text-sm text-semibold px-2'>Connect Wallet</Link>
                         <MdKeyboardArrowRight className='text-sm text-white-500' />
+                    </li>
+                    <li className='mx-1 px-2 text-2xl cursor-pointer font-semibold'>
+                    <HiLogout className='text-2xl text-white-500' />
                     </li>
                 </ul>
                 <div class="md:hidden flex items-center" onClick={()=>setIsOpen(!isOpen)}>
@@ -100,6 +103,17 @@ export const Navbar = () => {
                                         className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         Connect Wallet
+                                    </Link>
+                                    <Link
+                                        href="/logout"
+                                        activeClass="logout"
+                                        to="logout"
+                                        smooth={true}
+                                        offset={50}
+                                        duration={500}
+                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                        Logout
                                     </Link>
                                   
                                 </div>
