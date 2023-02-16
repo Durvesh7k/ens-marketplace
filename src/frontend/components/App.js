@@ -14,6 +14,7 @@ import ensAbi from './EnsContract.json';
 import EnsNameAbi from '../contractsData/EnsName.json';
 import EnsNameAddress from '../contractsData/EnsName-address.json';
 import { ColorRing } from 'react-loader-spinner';
+import Loading from './Loading';
 
 
 
@@ -110,12 +111,13 @@ hi
         </div>
       ) : !loading && loggedIn ? (
         <div>
-          <Navbar account={account} onClickButton={onClickButton} />
+          <Navbar account={account} onClickButton={onClickButton} handleLogout={handleLogout}/>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/buyens' element={<BuyensPage marketplace={marketplace} loadContracts={loadContracts} />} />
             <Route path='/listens' element={<ListEnsPage EnsNameAddress={EnsNameAddress} marketplace={marketplace} ENSContract={ENSContract} account={account} />} />
             <Route path='/about' element={<About />} />
+            <Route path='/loading' element={<Loading />} />
           </Routes>
           <Footer />
         </div>

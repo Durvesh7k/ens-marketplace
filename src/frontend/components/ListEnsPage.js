@@ -3,6 +3,7 @@ import product1 from './Public/product-5.jpg'
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import { Alchemy, Network } from 'alchemy-sdk';
+import Loading from './Loading';
 
 const ALCHEMY_API_KEY = process.env.REACT_APP_ALCHMEY_API_KEY
 
@@ -65,17 +66,18 @@ const ListEnsPage = ({ EnsNameAddress, marketplace, ENSContract, account }) => {
   return (
     <>
       <div className="bg-rbgradient flex flex-col justify-center items-center">
+        <h1 className='text-white text-lg md:text-xl lg:text-3xl font-righteous tracking-wider uppercase pt-24 lg:px-32 pb-5'>Your Owned ENS</h1>
+
         {loading ? (
-          <p>loading.....</p>
+            <Loading value="Loading...." />
         ) : (
           <div>
-            <h1 className='text-white text-lg md:text-xl lg:text-3xl font-righteous tracking-wider uppercase pt-24 lg:px-32 pb-5'>Your Owned ENS</h1>
             {ensNames.length === 0 ? (
-              <div>
-                <h2>Sorry you do not own any ENS Domains</h2>
+              <div className='h-screen'>
+                <h2 className='text-white font-righteous text-xl ml-2'>Sorry you do not own any ENS Domains</h2>
               </div>
             ) : loading ? (
-              <p>Please wait ..... Transaction is being processed!</p>
+              <Loading value='Please wait the Transcation is processing...' />
             ) : (
               <div className='grid xl:grid-cols-4 xl:gap-x-15 xl:px-20 xl:gap-y-14 xl:pb-32 gap-y-6 lg:grid-cols-3 md:grid-cols-2 md:gap-x-4 pb-20 '>
                 {ensNames.map((na, i) => (
@@ -101,7 +103,7 @@ const ListEnsPage = ({ EnsNameAddress, marketplace, ENSContract, account }) => {
                       onClick={() => listForSale(na.tokenId.toString(), na.title)}
                     >
                       List
-                    </button> 
+                    </button>
                   </div>
                 ))
                 }
