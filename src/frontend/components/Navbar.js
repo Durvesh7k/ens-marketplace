@@ -4,14 +4,15 @@ import profile from './Public/profile.png';
 import { MdAccountCircle, MdKeyboardArrowRight } from 'react-icons/md';
 import { HiMenuAlt3,HiOutlineX,HiLogout  } from 'react-icons/hi';
 import { Transition } from '@headlessui/react';
+import {AiOutlineLogout} from 'react-icons/ai'
 
 
-export const Navbar = ({account,onClickButton}) => {
+export const Navbar = ({account,onClickButton,handleLogout}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="bg-transparent fixed border-b-2 border-slate-700 w-screen text-gray-100 backdrop-filter backdrop-blur-lg">
-            <div className="container mx-auto flex items-center justify-between sm:px-8 px-12 ">
+            <div className="container mx-auto  flex items-center justify-between sm:px-8 px-12 ">
                 <div className="brand-logo">
                     <Link to="/" className="text-xl font-semibold ">ENS Marketplace</Link>
                 </div>
@@ -33,17 +34,16 @@ export const Navbar = ({account,onClickButton}) => {
                        )} 
                        <MdKeyboardArrowRight className='text-sm text-white-500' />
                     </li>
-<li>
-                        <Link className='mx-1 px-2 text-2xl font-semibold'>
-  <HiLogout className='text-2xl text-white-500' />
-</Link>
+                    <li>
+                        <Link className='mx-1 my-1 px-2 text-2xl font-semibold '>
+                            <AiOutlineLogout onClick={handleLogout} className='text-xl text-white-500 ml-2' />
+                        </Link>
                     </li>
                 </ul>
                 <div class="md:hidden flex items-center" onClick={() => setIsOpen(!isOpen)}>
                     <button class="outline-none p-2   mobile-menu-button bg-slate-500/30 rounded-full border-1 border-gray-500 select-none focus:bg-slate-800">
-                        {isOpen ? <HiOutlineX className='text-2xl text-gray-200' /> :
-                            <HiMenuAlt3 className='text-2xl text-gray-200' />
-
+                        {isOpen ? <HiOutlineX className='text-2xl mb-1 text-gray-200' /> :
+                            <HiMenuAlt3  className='text-2xl mb-1 text-gray-200' />
                         }
                     </button>
                 </div>

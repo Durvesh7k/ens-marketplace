@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import product1 from './Public/product-5.jpg'
+import Loading from './Loading';
 
 
 
-export const BuyensPage = ({ marketplace,loadContracts }) => {
+export const BuyensPage = ({ marketplace, loadContracts }) => {
   const [allListings, setAllListings] = useState([]);
   const [loading, setLoading] = useState(false);
   const [buyLoading, setBuyLoading] = useState(false);
@@ -18,7 +19,7 @@ export const BuyensPage = ({ marketplace,loadContracts }) => {
 
   useEffect(() => {
     loadContracts();
-  },[])
+  }, [])
 
   const allListing = async () => {
     setLoading(true);
@@ -79,9 +80,11 @@ export const BuyensPage = ({ marketplace,loadContracts }) => {
       <div className="bg-rbgradient flex flex-col justify-center items-center">
         <h1 className='text-white text-lg md:text-xl lg:text-3xl font-righteous tracking-wider uppercase pt-24 lg:px-32 pb-5'>Available ENS</h1>
         {loading ? (
-          <p>loading....</p>
+            <Loading value="Loading...." />
         ) : allListings.length === 0 ? (
-          <div>There are currently no ENS for Sale</div>
+          <div className='h-screen'>
+            <h1 className='text-white font-righteous text-xl'>There are currently no ENS for Sale</h1>
+          </div>
         ) : (
           <div>
             {allListings.map((item, i) => (
