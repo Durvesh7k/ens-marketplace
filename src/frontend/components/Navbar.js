@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom";
 import profile from './Public/profile.png';
 import { MdAccountCircle, MdKeyboardArrowRight } from 'react-icons/md';
-import { HiMenuAlt3,HiOutlineX,HiLogout  } from 'react-icons/hi';
+import { HiMenuAlt3, HiOutlineX, HiLogout } from 'react-icons/hi';
 import { Transition } from '@headlessui/react';
-import {AiOutlineLogout} from 'react-icons/ai'
+import { AiOutlineLogout } from 'react-icons/ai'
 
 
-export const Navbar = ({account,onClickButton,handleLogout}) => {
+export const Navbar = ({ account, onClickButton, handleLogout }) => {
 
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -27,23 +27,23 @@ export const Navbar = ({account,onClickButton,handleLogout}) => {
                         <Link className='mx-1 px-2 text-sm font-semibold'>About</Link>
                     </li>
                     <li className="flex items-center justify-center ml-2 px-4 py-1 cursor-pointer text-sm text-blue-100 transition-colors duration-300 bg-blue-500 rounded-full shadow-xl hover:bg-blue-600 shadow-blue-400/30" onClick={onClickButton}>
-                       {account === null ? (
-                        <span>Connect wallet</span>
-                       ):(
-                        <span>Connected</span>
-                       )} 
-                       <MdKeyboardArrowRight className='text-sm text-white-500' />
+                        {account === null ? (
+                            <span>Connect wallet</span>
+                        ) : (
+                            <span>Connected</span>
+                        )}
+                        <MdKeyboardArrowRight className='text-sm text-white-500' />
                     </li>
                     <li>
-                        <Link className='mx-1 my-1 px-2 text-2xl font-semibold '>
-                            <AiOutlineLogout onClick={handleLogout} className='text-xl text-white-500 ml-2' />
+                        <Link className='mx-1 px-2 text-2xl font-semibold '>
+                            <AiOutlineLogout onClick={handleLogout} className='text-2xl text-white-500 ml-2' />
                         </Link>
                     </li>
                 </ul>
                 <div class="md:hidden flex items-center" onClick={() => setIsOpen(!isOpen)}>
                     <button class="outline-none p-2   mobile-menu-button bg-slate-500/30 rounded-full border-1 border-gray-500 select-none focus:bg-slate-800">
-                        {isOpen ? <HiOutlineX className='text-2xl mb-1 text-gray-200' /> :
-                            <HiMenuAlt3  className='text-2xl mb-1 text-gray-200' />
+                        {isOpen ? <HiOutlineX className='text-2xl text-gray-200' /> :
+                            <HiMenuAlt3 className='text-2xl text-gray-200' />
                         }
                     </button>
                 </div>
@@ -88,42 +88,41 @@ export const Navbar = ({account,onClickButton,handleLogout}) => {
                                     Buy ENS
                                 </Link>
 
-                                    <Link
-                                        to="/about"
-                                        activeClass="about"
-                                        smooth={true}
-                                        offset={50}
-                                        duration={500}
-                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                    >
-                                        About
-                                    </Link>
-                                    <Link
-                                        href="/contact"
-                                        activeClass="contact"
-                                        to="contact"
-                                        smooth={true}
-                                        offset={50}
-                                        duration={500}
-                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                    >
-                                        Connect Wallet
-                                    </Link>
-                                  <Link
-                                        href="/logout"
-                                        activeClass="logout"
-                                        to="contact"
-                                        smooth={true}
-                                        offset={50}
-                                        duration={500}
-                                        className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                    >
-                                        Logout
-                                    </Link>
+                                <Link
+                                    to="/about"
+                                    activeClass="about"
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    About
+                                </Link>
+                                <div
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    {account === null ? (
+                                        <span>Connect wallet</span>
+                                    ) : (
+                                        <span>Connected 🟢</span>
+                                    )}
                                 </div>
+                                <Link
+                                    onClick={handleLogout}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={500}
+                                    className="cursor-pointer hover:bg-blue-900/30 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                >
+                                    Logout
+                                </Link>
                             </div>
-                        )
-                    }
+                        </div>
+                    )
+                }
 
             </Transition>
         </nav >
