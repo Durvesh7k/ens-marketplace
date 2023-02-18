@@ -1,7 +1,4 @@
 import React from 'react'
-import { Grid } from 'react-loader-spinner'
-
-
 
 const Loading = ({ value }) => {
     return (
