@@ -14,17 +14,17 @@ export const Navbar = ({account,onClickButton,handleLogout}) => {
         <nav className="bg-transparent fixed border-b-2 border-slate-700 w-screen text-gray-100 backdrop-filter backdrop-blur-lg">
             <div className="container mx-auto  flex items-center justify-between sm:px-8 px-12 ">
                 <div className="brand-logo">
-                    <Link to="/" className="text-xl font-semibold ">ENS Marketplace</Link>
+                    <Link  to="/" className="text-xl font-semibold ">ENS Marketplace</Link>
                 </div>
                 <ul className="hidden  items-center md:flex">
                     <li>
-                        <Link className='mx-1 px-2 text-sm font-semibold' to='/listens'>List ENS</Link>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })} className='mx-1 px-2 text-sm font-semibold' to='/listens'>List ENS</NavLink>
                     </li>
                     <li>
-                        <Link className='mx-1 px-2 text-sm font-semibold' to='/buyens'>Buy ENS</Link>
+                    <NavLink style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })} className='mx-1 px-2 text-sm font-semibold' to='/buyens'>Buy ENS</NavLink>
                     </li>
                     <li>
-                        <Link to="/about" className='mx-1 px-2 text-sm font-semibold'>About</Link>
+                    <NavLink style={({ isActive }) => ({ color: isActive ? 'cyan' : 'white' })} to="/about" className='mx-1 px-2 text-sm font-semibold'>About</NavLink>
                     </li>
                     <li className="flex items-center justify-center ml-2 px-4 py-1 cursor-pointer text-sm text-blue-100 transition-colors duration-300 bg-blue-500 rounded-full shadow-xl hover:bg-blue-600 shadow-blue-400/30" onClick={onClickButton}>
                        {account === null ? (
