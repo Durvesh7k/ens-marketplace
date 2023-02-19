@@ -24,7 +24,7 @@ export const Navbar = ({account,onClickButton,handleLogout}) => {
                         <Link className='mx-1 px-2 text-sm font-semibold' to='/buyens'>Buy ENS</Link>
                     </li>
                     <li>
-                        <Link className='mx-1 px-2 text-sm font-semibold'>About</Link>
+                        <Link to="/about" className='mx-1 px-2 text-sm font-semibold'>About</Link>
                     </li>
                     <li className="flex items-center justify-center ml-2 px-4 py-1 cursor-pointer text-sm text-blue-100 transition-colors duration-300 bg-blue-500 rounded-full shadow-xl hover:bg-blue-600 shadow-blue-400/30" onClick={onClickButton}>
                        {account === null ? (

@@ -85,8 +85,8 @@ const LoginPage = ({ loginWithLink, login }) => {
         </div>
         <span class="h-0.5  my-8 bg-gray-400 w-full border-0 "></span>
         <div className="flex items-center justify-center  pt-4">
-          <p className="text-gray-300 text-sm">Authentication Provided By </p>
-          <a href="https://www.arcana.network/" target='_blank'><img src={arcana} className='w-24 mx-3' alt="aracana_logo" /></a>
+          <p className="text-gray-300 text-xs md:text-sm">Authentication Provided By </p>
+          <a href="https://www.arcana.network/" target='_blank'><img src={arcana} className='w-20 md:w-24 ml-2 md:mx-3' alt="aracana_logo" /></a>
         </div>
       </div>
     </div>
