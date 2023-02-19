@@ -8,7 +8,7 @@ export const Footer = () => {
 		<div className="lg:w-1/3">
 			<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
 				<div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-blue-400">
-					<FaEthereum className=''/>
+					<FaEthereum className='text-2xl'/>
 				</div>
 				<span className="self-center text-2xl font-semibold">ENS MarketPlace</span>
 			</a>
