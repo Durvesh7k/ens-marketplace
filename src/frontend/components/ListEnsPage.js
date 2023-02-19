@@ -34,7 +34,6 @@ const ListEnsPage = ({ EnsNameAddress, marketplace, ENSContract, account }) => {
       contractAddresses: [ensContractAddress],
     });
 
-    console.log(ens);
 
     setEnsNames(ens.ownedNfts);
     setLoadPage(false);
