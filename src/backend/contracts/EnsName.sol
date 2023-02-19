@@ -12,6 +12,7 @@ contract EnsName {
         uint256 tokenId;
         uint256 price;
         bool listed;
+        bool isOwned;
         address payable seller;
     }
 
@@ -32,6 +33,7 @@ contract EnsName {
             _tokenId,
             _price,
             true,
+            false,
             payable(msg.sender)
         );
     }
@@ -44,6 +46,7 @@ contract EnsName {
         require(eachItem.listed == true, "This item is has not been listed for sale");
         ensContract.transferFrom(eachItem.seller, msg.sender, eachItem.tokenId);
         eachItem.listed = false;
+        eachItem.isOwned = true;
         (bool sent, ) = eachItem.seller.call{value: msg.value}("");
         require(sent, "Failed to send Ether");
     }
