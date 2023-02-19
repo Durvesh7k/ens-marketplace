@@ -20,7 +20,7 @@ const TimeLine = () => {
                                 <h4 className="text-gray-200 font-semibold text-xl -mt-2">Login to our application</h4>
                             </div>
                             <div className="ml-6 mb-6 pb-6">
-                                <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
+                               
                                 <p className="text-gray-300 mt-2 mb-4">The first step while using our app is just login you can login
                                     with your social accounts like google and discord and also
                                     with your mail. The arcana provides the awesome auth sdk
@@ -37,7 +37,7 @@ const TimeLine = () => {
                                 <h4 className="text-gray-200 font-semibold text-xl -mt-2">Get Ens name</h4>
                             </div>
                             <div className="ml-6 mb-6 pb-6">
-                                <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
+                               
                                 <p className="text-gray-300 mt-2 mb-4">After login you will instantly get a account address and the
                                     private key and thw arcana wallet in bottom right corner
                                     from which you can perform transcations and can send and
@@ -58,7 +58,7 @@ const TimeLine = () => {
                                 </h4>
                             </div>
                             <div className="ml-6 mb-6 pb-6">
-                                <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
+                               
                                 <p className="text-gray-300 mt-2 mb-4">After getting the ens name you can list it to sell on our
                                     application in the desired amount you want on the <Link to='/listens' className='underline text-blue-700'>ListEnsPage</Link></p>
                             </div>
@@ -73,7 +73,7 @@ const TimeLine = () => {
                                 <h4 className="text-gray-200 font-semibold text-xl -mt-2">Buy ens</h4>
                             </div>
                             <div className="ml-6 mb-6 pb-6">
-                                <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
+                               
                                 <p className="text-gray-300 mt-2 mb-4">If you are a buyer and want to get some ens name then you
                                     can got to the  <Link to='/buyens' className='underline text-blue-700'>BuyEnsPage</Link> and can buy the ens
                                     domain from the listed ones.</p>
@@ -89,7 +89,7 @@ const TimeLine = () => {
                                 <h4 className="text-gray-200 font-semibold text-xl -mt-2">Need</h4>
                             </div>
                             <div className="ml-6 mb-6 pb-6">
-                                <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
+                               
                                 <p className="text-gray-300 mt-2 mb-4">Anyone might be thinking is they can buy the ens names on
                                     the site like opensea so why should anyone come to our
                                     application the main reason behind creating this app is for

@@ -1,12 +1,13 @@
 import React from 'react'
 import login_img from "./Public/login-img.png"
+import arcana from "./Public/arcana_logo.png"
 import { FcGoogle } from "react-icons/fc"
 import { FaDiscord } from "react-icons/fa"
 import { useState } from 'react'
 
 
 
-const LoginPage = ({loginWithLink,login}) => {
+const LoginPage = ({ loginWithLink, login }) => {
 
   const [email, setEmail] = useState("");
 
@@ -35,12 +36,12 @@ const LoginPage = ({loginWithLink,login}) => {
                 <label className="mt-4 block text-white text-sm font-bold mb-2">
                   Email
                 </label>
-                <input className="w-full py-1.5 px-4 mt-2 bg-slate-500/50 rounded-md outline-none font-semibold text-white focus:border-slate-800 focus:outline-cyan-400" 
-                id="username" 
-                type="text" 
-                placeholder="Email" 
-                value={email} 
-                onChange = {handleEmailChange}
+                <input className="w-full py-1.5 px-4 mt-2 bg-slate-500/50 rounded-md outline-none font-semibold text-white focus:border-slate-800 focus:outline-cyan-400"
+                  id="username"
+                  type="text"
+                  placeholder="Email"
+                  value={email}
+                  onChange={handleEmailChange}
                 />
               </div>
               <button className="py-1.5 px-4 mt-3 w-full  bg-cyan-400 text-black rounded-md font-medium ml-auto items-end hover:bg-cyan-600" type='submit' >
@@ -54,13 +55,40 @@ const LoginPage = ({loginWithLink,login}) => {
               <span class="px-3 font-medium    left-1/2 text-white">or</span>
               <span class="h-0.5  my-8 bg-gray-400 w-full border-0 "></span>
             </div>
-            <button className="py-1.5 px-4  flex items-center justify-center  w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200" onClick={() => {login('google')}}>
+            <button className="py-1.5 px-4  flex items-center justify-center  w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200" onClick={() => { login('google') }}>
               <FcGoogle class="text-2xl" />
               <span className="text-sm ml-2" >
                 SignIn with Google
               </span>
             </button>
+<<<<<<< HEAD
+=======
+            <button className="py-1.5 px-4  flex items-center justify-center mt-3 w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200">
+              <FaDiscord class="text-2xl text-blue-500" />
+              <span className="text-sm ml-2">
+                SignIn with Discord
+              </span>
+            </button>
+
+
+
+
+            <p className="mt-6 text-sm  mb-2 text-white">
+              Don't have an Account?
+              <Link
+                to="/"
+                className="text-cyan-400 ml-1 underline"
+              >
+                SignUp Now
+              </Link>
+            </p>
+>>>>>>> ayush
           </div>
+        </div>
+        <span class="h-0.5  my-8 bg-gray-400 w-full border-0 "></span>
+        <div className="flex items-center justify-center  pt-4">
+          <p className="text-gray-300 text-xs md:text-sm">Authentication Provided By </p>
+          <a href="https://www.arcana.network/" target='_blank'><img src={arcana} className='w-20 md:w-24 ml-2 md:mx-3' alt="aracana_logo" /></a>
         </div>
       </div>
     </div>
