@@ -2,8 +2,9 @@ import React from 'react'
 import login_img from "./Public/login-img.png"
 import arcana from "./Public/arcana_logo.png"
 import { FcGoogle } from "react-icons/fc"
-import { FaDiscord } from "react-icons/fa"
 import { useState } from 'react'
+import DENS from "./Public/DENS.png"
+
 
 
 
@@ -24,7 +25,14 @@ const LoginPage = ({ loginWithLink, login }) => {
   return (
     <div className="bg-login h-screen w-100 p-8 flex items-center justify-center">
       <div className="md:w-3/6 sm:w-full  rounded-md shadow-sm shadow-slate-800 bg-slate-600/30 p-8">
-        <h4 className="text-2xl text-center font-sans font-semibold text-white">Login</h4>
+        <div className="text-2xl text-center font-sans font-semibold text-white flex justify-center items-center">
+          <h4>Login To</h4>
+          <img
+            className='w-16'
+            src={DENS}
+            alt="DENS Logo"
+          />
+        </div>
         <div className="grid md:grid-cols-2 md:grid-rows-1 sm:grid-rows-2 gap-2 items-center">
 
           <div className="md:py-12 py-4 ">
@@ -61,28 +69,6 @@ const LoginPage = ({ loginWithLink, login }) => {
                 SignIn with Google
               </span>
             </button>
-<<<<<<< HEAD
-=======
-            <button className="py-1.5 px-4  flex items-center justify-center mt-3 w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200">
-              <FaDiscord class="text-2xl text-blue-500" />
-              <span className="text-sm ml-2">
-                SignIn with Discord
-              </span>
-            </button>
-
-
-
-
-            <p className="mt-6 text-sm  mb-2 text-white">
-              Don't have an Account?
-              <Link
-                to="/"
-                className="text-cyan-400 ml-1 underline"
-              >
-                SignUp Now
-              </Link>
-            </p>
->>>>>>> ayush
           </div>
         </div>
         <span class="h-0.5  my-8 bg-gray-400 w-full border-0 "></span>
