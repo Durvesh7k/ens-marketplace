@@ -34,9 +34,12 @@ const ListEnsPage = ({ EnsNameAddress, marketplace, ENSContract, account }) => {
       contractAddresses: [ensContractAddress],
     });
 
+    console.log(ens);
+
     setEnsNames(ens.ownedNfts);
     setLoadPage(false);
   };
+
 
   const listForSale = async (tokId, ensName) => {
     setLoading(true);
@@ -69,7 +72,7 @@ const ListEnsPage = ({ EnsNameAddress, marketplace, ENSContract, account }) => {
         <h1 className='text-white text-lg md:text-xl lg:text-3xl font-righteous tracking-wider uppercase pt-24 lg:px-32 pb-5'>Your Owned ENS</h1>
 
         {loading ? (
-            <Loading value="Loading...." />
+          <Loading value="Loading...." />
         ) : (
           <div>
             {ensNames.length === 0 ? (

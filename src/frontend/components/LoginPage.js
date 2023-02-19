@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import login_img from "./Public/login-img.png"
 import { FcGoogle } from "react-icons/fc"
 import { FaDiscord } from "react-icons/fa"
@@ -61,25 +60,6 @@ const LoginPage = ({loginWithLink,login}) => {
                 SignIn with Google
               </span>
             </button>
-            <button className="py-1.5 px-4  flex items-center justify-center mt-3 w-full  bg-white shadow-sm text-black rounded-md font-medium hover:bg-gray-200">
-              <FaDiscord class="text-2xl text-blue-500" />
-              <span className="text-sm ml-2">
-                SignIn with Discord
-              </span>
-            </button>
-
-
-      
-
-            <p className="mt-6 text-sm  mb-2 text-white">
-              Don't have an Account?
-              <Link
-                to="/"
-                className="text-cyan-400 ml-1 underline"
-              >
-                SignUp Now
-              </Link>
-            </p>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ const TimeLine = () => {
                                     private key and thw arcana wallet in bottom right corner
                                     from which you can perform transcations and can send and
                                     receive between various cryptocurrencies. So to get ens name
-                                    visit the site [Link] this is site where you can register the
+                                    visit the site <a href='https://app.ens.domains/' target='_blank' className='text-blue-700 underline'>here</a> this is site where you can register the
                                     domains on goerli network for that you have to simply import
                                     your account into some browser wallet like metamask..</p>
                             </div>
@@ -60,7 +60,7 @@ const TimeLine = () => {
                             <div className="ml-6 mb-6 pb-6">
                                 <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
                                 <p className="text-gray-300 mt-2 mb-4">After getting the ens name you can list it to sell on our
-                                    application in the desired amount you want on the <Link to='/listens' className='underline'>ListEnsPage</Link></p>
+                                    application in the desired amount you want on the <Link to='/listens' className='underline text-blue-700'>ListEnsPage</Link></p>
                             </div>
                         </li>
                         <li>
@@ -75,7 +75,7 @@ const TimeLine = () => {
                             <div className="ml-6 mb-6 pb-6">
                                 <a href="#!" className="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</a>
                                 <p className="text-gray-300 mt-2 mb-4">If you are a buyer and want to get some ens name then you
-                                    can got to the  <Link to='/buyens' className='underline'>BuyEnsPage</Link> and can buy the ens
+                                    can got to the  <Link to='/buyens' className='underline text-blue-700'>BuyEnsPage</Link> and can buy the ens
                                     domain from the listed ones.</p>
                             </div>
                         </li>
