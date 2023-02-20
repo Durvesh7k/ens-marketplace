@@ -26,6 +26,8 @@ Before running any scripts, you'll want to create a .env file with the following
 - **REACT_APP_QUICKNODE_KEY=""**
 - **REACT_APP_ARCANA_APP_ID=""**
 - **REACT_APP_ALCHMEY_API_KEY=""**
+- **REACT_APP_PRIVATE_KEY=""**
+
 
 #### You can get these keys from the link mentioned above
 
